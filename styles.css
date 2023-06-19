@@ -140,6 +140,7 @@ li {
 #gallery-container {
     background-color: #F0F0F0;
 }
+
 .image-container {
     width: 95%;
     margin: 0 auto;
@@ -180,44 +181,15 @@ li {
     filter: grayscale(0%);
 }
 
-.card figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 25px;
-    width: 100%;
-    height: 20%;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    opacity: 0;
-    border-radius: 0 0 10px 10px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    transition: 0.3s;
-}
-
-.card:hover figcaption {
-    opacity: 1;
-    transform: scale(1.03);
-}
-
 /* Adding media query */ 
 @media (max-width: 1200px) {
     .card {
         width: 49%;
-    }
-
-    .card figcaption {
-        font-size: 14px;
     }
 }
 
 @media (max-width: 700px) {
     .card {
         width: 100%;
-    }
-
-    .card figcaption {
-        font-size: 10px;
     }
 }
